@@ -1,0 +1,50 @@
+Write a paragraph or two describing the achievable Recovery Time Objective (RTO) and
+Recovery Point Objective (RPO) for this Multi-AZ, multi-region database in terms of:
+
+1.- Minimum RTO for a single AZ outage
+
++----------+-------------------------------------------------------------+
+|   Time   |                         Description                         |
++----------+-------------------------------------------------------------+
+| 00:01:00 | Problem occurred (First minute)                             |
++----------+-------------------------------------------------------------+
+| 00:06:00 | Time to raise alerts (Approximately 5 minutes)              |
++----------+-------------------------------------------------------------+
+| 00:07:00 | Automatically switch to second availability zone (1 minute) |
++----------+-------------------------------------------------------------+
+
+Total time for system's recovery: 10 minutes
+
+2.- Minimum RTO for a single region outage
+
++----------+------------------------------------------------------------------------------------------------+
+|   Time   |                                           Description                                          |
++----------+------------------------------------------------------------------------------------------------+
+| 00:01:00 | Problem occurred (First minute)                                                                |
++----------+------------------------------------------------------------------------------------------------+
+| 00:06:00 | Time to raise alerts (Approximatelly 5 minutes)                                                |
++----------+------------------------------------------------------------------------------------------------+
+| 00:07:00 | Alert triggers on all staff (1 minute)                                                         |
++----------+------------------------------------------------------------------------------------------------+
+| 00:20:00 | On-call staff may need to get out of bed, get to a computer, log in, log onto VPN (10 minutes) |
++----------+------------------------------------------------------------------------------------------------+
+| 00:30:00 | On-call root cause analysis starts (10 minutes)                                                |
++----------+------------------------------------------------------------------------------------------------+
+| 00:40:00 | Root cause analysis done (10 minutes)                                                          |
++----------+------------------------------------------------------------------------------------------------+
+| 00:50:00 | Remediation started (10 minutes)                                                               |
++----------+------------------------------------------------------------------------------------------------+
+| 00:55:00 | Issue fixed                                                                                    |
++----------+------------------------------------------------------------------------------------------------+
+
+Total time for system's recovery: 60 minutes
+
+3.- Minimum RPO for a single AZ outage
+
+RDS has point in time restore available after every 5 minutes. At the most data loss will be of 5 minutes.
+
+4.- Minimum RPO for a single region outage
+
+Read replicas are almost kept in sync with the primary database, ideally, they will be having the same RPO as the
+primary database. For practical purpose we can consider at most the RP0 should be approximately 10minutes
+
