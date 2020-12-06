@@ -121,7 +121,7 @@ with those subnets. Name the screenshots:
 #### Security Group
 ![Security Group](screenshots/RDS_mysql_creation_03.png "Security Group")
 
-Password: 12345678
+#### <b>Password</b>: <i>12345678</i>
 
 #### Primary DB config
 ![Primary DB config](screenshots/primaryDB_config.png "Primary DB config")
@@ -158,4 +158,50 @@ Recovery Point Objective (RPO) for this Multi-AZ, multi-region database in terms
 <li>Minimum RPO for a single AZ outage</li>
 <li>Minimum RPO for a single region outage</li>
 </ol>
+
+<b>SAVE:<b/> <i>estimates.txt</i>
+
+https://github.com/Marvinsky/aws_availability_reliability_resilence/estimates.txt
+
+### Demonstrate Normal Usage
+
+In the active region:
+
+<ol>
+<li>Create an EC2 keypair in the region</li>
+<li>Launch an Amazon Linux EC2 instance in the active region. Configure
+the instance to use the VPC's public subnet and security group ("UDARR-Application")</li>
+<li>SSH to the instance and connect to the "udacity" database in the RDS instance</li>
+<li>Verify that you can create a table, insert data, and read data from the database</li>
+<li>You have now demonstrated that you can read and write to the primary database.</li>
+</ol>
+
+<b>SAVE</b>: The log connecting to the database, creating the table,
+writing to and reading from the table in a text file called <i>log_primary.txt</i>
+
+#### Amazon Linux EC2 - Creation 00
+![Amazon Linux EC2](screenshots/USAGE_EC2_creation_00.png "Amazon Linux EC2")
+
+#### Amazon Linux EC2 - Creation 01
+![Amazon Linux EC2](screenshots/USAGE_EC2_creation_01.png "Amazon Linux EC2")
+
+#### Amazon Linux EC2 - Creation 02
+![Amazon Linux EC2](screenshots/USAGE_EC2_creation_02.png "Amazon Linux EC2")
+
+#### Amazon Linux EC2 - Creation 03
+![Amazon Linux EC2](screenshots/USAGE_EC2_creation_03.png "Amazon Linux EC2")
+
+#### Amazon Linux EC2 - Creation 04
+![Amazon Linux EC2](screenshots/USAGE_EC2_creation_04.png "Amazon Linux EC2")
+
+#### Amazon Linux EC2 - Creation 05
+![Amazon Linux EC2](screenshots/USAGE_EC2_creation_05.png "Amazon Linux EC2")
+
+#### Amazon Linux EC2 - Creation 06
+![Amazon Linux EC2](screenshots/USAGE_EC2_creation_06.png "Amazon Linux EC2")
+
+#### Amazon Linux EC2 - Creation 07
+![Amazon Linux EC2](screenshots/USAGE_EC2_creation_07.png "Amazon Linux EC2")
+
+
 
