@@ -257,3 +257,31 @@ configure it as a static website.
 <li>Paste URL into a web browser to see your website</li>
 </ol>
 
+#### S3 bucket creation
+![S3 bucket creation](screenshots/S3_bucket_creation_00.png "S3 bucket creation")
+
+#### S3 bucket enable public access for file.
+![S3 bucket creation](screenshots/S3_bucket_creation_01.png "S3 bucket creation")
+
+#### S3 Original
+![S3 Original](screenshots/s3_original.png "S3 Original")
+
+#### S3 Season
+![S3 Season](screenshots/s3_season.png "S3 Season")
+
+#### S3 Season Revert
+![S3 Season Revert](screenshots/s3_season_revert.png "S3 Season Revert")
+
+#### S3 Deletion
+![S3 Deletion](screenshots/s3_deletion.png "S3 Deletion")
+
+#### S3 Delete Marker
+![S3 Deletion Marker](screenshots/s3_delete_marker.png "S3 Delete Marker")
+
+
+#### S3 Delete Revert
+![S3 Deletion Revert](screenshots/s3_delete_revert.png "S3 Delete Revert")
+
+
+
+
