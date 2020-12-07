@@ -92,6 +92,16 @@ with those subnets. Name the screenshots:
 #### RDS subnet selected
 ![RDS Subnet selected](screenshots/RDS_creation_01.png "RDS selected")
 
+#### MYSQL primary private subnet
+![RDS Subnet selected](screenshots/MYSQL_primary_privatesubnet.png "RDS selected")
+
+#### MYSQL primary automatic backup enabled
+![MYSQL primary automatic backup](screenshots/MYSQL_primary_autobackup_enabled.png "MYSQL primary automatic backup")
+
+#### Private Subnet routing table
+![Subnet routing table](screenshots/Subnet_routingtable.png "Subnet routing table")
+
+
 #### N.Virginia
 
 #### VPC
@@ -122,6 +132,19 @@ with those subnets. Name the screenshots:
 ![Security Group](screenshots/RDS_mysql_creation_03.png "Security Group")
 
 #### <b>Password</b>: <i>12345678</i>
+
+#### MYSQL secondary private subnet
+![MySQL secundary](screenshots/MYSQL_secundary_privatesubnet.png "MySQL secundary")
+
+#### MYSQL secondary automatic backup enabled
+![MYSQL primary automatic backup](screenshots/MYSQL_secundary_autobackup_enabled.png "MYSQL primary automatic backup")
+
+#### Private secondary Subnet routing table
+![Subnet routing table](screenshots/Subnet_secundary_routingtable.png "Subnet routing table")
+
+
+
+
 
 #### Primary DB config
 ![Primary DB config](screenshots/grade/primaryDB_config.png "Primary DB config")
