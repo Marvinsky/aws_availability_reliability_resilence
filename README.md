@@ -7,7 +7,6 @@
 
 
 <ol>
-
 <li>Services -> CloudFormation</li>
 <li>Create stack "With new resources (standard)"</li>
 <li>Template is ready</li>
@@ -301,10 +300,6 @@ configure it as a static website.
 #### S3 Delete Marker
 ![S3 Deletion Marker](screenshots/grade/s3_delete_marker.png "S3 Delete Marker")
 
-
 #### S3 Delete Revert
 ![S3 Deletion Revert](screenshots/grade/s3_delete_revert.png "S3 Delete Revert")
-
-
-
 
