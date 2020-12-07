@@ -1,0 +1,51 @@
+ssh -i "useast1northvirginiakey.pem" ec2-user@ec2-35-173-235-113.compute-1.amazonaws.com
+Last login: Mon Dec  7 03:06:52 2020 from 179.6.208.191
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+[ec2-user@ip-10-1-10-222 ~]$ mysql -h udacityreplica.cjp0m4s4ih74.us-east-1.rds.amazonaws.com -P 3306 -u admin -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MySQL connection id is 10
+Server version: 8.0.20 Source distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MySQL [(none)]> use udacity;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+MySQL [udacity]> INSERT INTO tasks (task_id) VALUES ("attempt to insert data");
+Query OK, 1 row affected, 2 warnings (0.02 sec)
+
+MySQL [udacity]> select * from tasks;
++---------+-----------------+---------------------+
+| task_id | title           | created_at          |
++---------+-----------------+---------------------+
+|       1 | create database | 2020-12-06 23:35:54 |
+|       2 | create registry | 2020-12-06 23:36:31 |
+|       3 |                 | 2020-12-07 03:15:44 |
++---------+-----------------+---------------------+
+3 rows in set (0.00 sec)
+
+MySQL [udacity]> update tasks set title='attempt to insert data' where task_id=3;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MySQL [udacity]> select * from tasks;
++---------+------------------------+---------------------+
+| task_id | title                  | created_at          |
++---------+------------------------+---------------------+
+|       1 | create database        | 2020-12-06 23:35:54 |
+|       2 | create registry        | 2020-12-06 23:36:31 |
+|       3 | attempt to insert data | 2020-12-07 03:15:44 |
++---------+------------------------+---------------------+
+3 rows in set (0.01 sec)
+
+MySQL [udacity]>

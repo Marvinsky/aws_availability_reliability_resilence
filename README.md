@@ -203,5 +203,57 @@ writing to and reading from the table in a text file called <i>log_primary.txt</
 #### Amazon Linux EC2 - Creation 07
 ![Amazon Linux EC2](screenshots/USAGE_EC2_creation_07.png "Amazon Linux EC2")
 
+<b>SAVE:<b/> <i>log_primary.txt</i>
 
+https://github.com/Marvinsky/aws_availability_reliability_resilence/log_primary.txt
+
+### Monitor database
+
+<ol>
+<li>Observe the "DB Connections" to the database and how this metric
+changes as you connect to the database</li>
+<li>Observe the "Replication" configuration with your multi-region read replica</li>
+</ol>
+
+#### Monitor Connection - udacity
+![Monitor database](screenshots/monitoring_connections.png "Monitor database")
+
+#### Monitor Replication - udacity
+![Monitor database](screenshots/monitoring_replication.png "Monitor database")
+
+### Failover And Recovery
+
+In the standby region
+
+<ol>
+<li>Create an EC2 keypair in the region</li>
+<li>Launch an Amazon Linux EC2 instance in the standby region. Configure the instance to use the VPC's public subnet and security group ("UDARR-Application").
+</li>
+<li>SSH to the instance and connect to the read replica database.</li>
+<li>Verify if you are not able to insert data into the database but are able to read from the database.</li>
+<li>You have now demonstrated that you can only read from the read replica database.</li>
+</ol>
+
+<b>SAVE:</b> log_rr_before_promotion.txt
+
+#### RR before promotion
+![rr before promotion](screenshots/rr_before_promotion.png "rr before promotion")
+
+#### Promote read replica in order to make insertion
+![Read Replica](screenshots/REPLICA_promote.png "Read Replica")
+
+#### RR after promotion
+![rr after promotion](screenshots/rr_after_promotion.png "rr after promotion")
+
+
+### Website Resiliency
+
+Build a resilient static web hosting in AWS. Create a versioned S3 bucket and
+configure it as a static website.
+
+<ol>
+<li>Enter "index.html" for both index document and Error document</li>
+<li>Upload the files from the GitHub repo (under <b>/project/s3/</b>)</li>
+<li>Paste URL into a web browser to see your website</li>
+</ol>
 
