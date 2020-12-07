@@ -133,13 +133,13 @@ with those subnets. Name the screenshots:
 #### <b>Password</b>: <i>12345678</i>
 
 #### MYSQL secondary private subnet
-![MySQL secundary](screenshots/MYSQL_secundary_privatesubnet.png "MySQL secundary")
+![MySQL secundary](screenshots/MYSQL_secondary_privatesubnet.png "MySQL secundary")
 
 #### MYSQL secondary automatic backup enabled
-![MYSQL primary automatic backup](screenshots/MYSQL_secundary_autobackup_enabled.png "MYSQL primary automatic backup")
+![MYSQL primary automatic backup](screenshots/MYSQL_secondary_autobackup_enabled.png "MYSQL primary automatic backup")
 
 #### Private secondary Subnet routing table
-![Subnet routing table](screenshots/Subnet_secundary_routingtable.png "Subnet routing table")
+![Subnet routing table](screenshots/Subnet_secondary_routingtable.png "Subnet routing table")
 
 
 
