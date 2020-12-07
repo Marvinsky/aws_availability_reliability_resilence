@@ -46,12 +46,12 @@ region "Primary" and name the VPC in the standby region "Secondary"</li>
 </ol>
 
 #### primary VPC:
-![Primary VPC](screenshots/primary_Vpc.png "Primary VPC")
+![Primary VPC](screenshots/grade/primary_Vpc.png "Primary VPC")
 #### primary VPC detail:
 ![Primary VPC Detail](screenshots/primary_Vpc_detail.png "Primary VPC Detail")
 
 #### secondary VPC:
-![Secondary VPC](screenshots/secondary_Vpc.png "Secondary VPC")
+![Secondary VPC](screenshots/grade/secondary_Vpc.png "Secondary VPC")
 #### secondary VPC Detail:
 ![Secondary VPC Detail](screenshots/secondary_Vpc_detail.png "Secondary VPC Detail")
 
@@ -124,28 +124,28 @@ with those subnets. Name the screenshots:
 #### <b>Password</b>: <i>12345678</i>
 
 #### Primary DB config
-![Primary DB config](screenshots/primaryDB_config.png "Primary DB config")
+![Primary DB config](screenshots/grade/primaryDB_config.png "Primary DB config")
 
 #### Secondary DB config
-![Secondary DB config](screenshots/secondaryDB_config.png "Secondary DB config")
+![Secondary DB config](screenshots/grade/secondaryDB_config.png "Secondary DB config")
 
 #### PrimaryDB subnet group
-![Primary Subnet Group](screenshots/primaryDB_subnetgroup.png "Primary Subnet Group")
+![Primary Subnet Group](screenshots/grade/primaryDB_subnetgroup.png "Primary Subnet Group")
 
 #### SecondaryDB subnet group
-![Secondary Subnet Group](screenshots/secondaryDB_subnetgroup.png "Secondary Subnet Group")
+![Secondary Subnet Group](screenshots/grade/secondaryDB_subnetgroup.png "Secondary Subnet Group")
 
 #### Primary VPC Subnet
-![Primary VPC Subnets](screenshots/primaryVPC_subnets.png "Primary VPC Subnet")
+![Primary VPC Subnets](screenshots/grade/primaryVPC_subnets.png "Primary VPC Subnet")
 
 #### Secondary VPC Subnet
-![Secondary VPC Subnets](screenshots/secondaryVPC_subnets.png "Secondary VPC Subnet")
+![Secondary VPC Subnets](screenshots/grade/secondaryVPC_subnets.png "Secondary VPC Subnet")
 
 #### Primary Subnet Routing
-![Primary Subnet Routing](screenshots/primary_subnet_routing.png "Primary Subnet Routing")
+![Primary Subnet Routing](screenshots/grade/primary_subnet_routing.png "Primary Subnet Routing")
 
 #### Secondary Subnet Routing
-![Secondary Subnet Routing](screenshots/secondary_subnet_routing.png "Secondary Subnet Routing")
+![Secondary Subnet Routing](screenshots/grade/secondary_subnet_routing.png "Secondary Subnet Routing")
 
 ### Availability Estimate
 
@@ -216,10 +216,10 @@ changes as you connect to the database</li>
 </ol>
 
 #### Monitor Connection - udacity
-![Monitor database](screenshots/monitoring_connections.png "Monitor database")
+![Monitor database](screenshots/grade/monitoring_connections.png "Monitor database")
 
 #### Monitor Replication - udacity
-![Monitor database](screenshots/monitoring_replication.png "Monitor database")
+![Monitor database](screenshots/grade/monitoring_replication.png "Monitor database")
 
 ### Failover And Recovery
 
@@ -237,13 +237,13 @@ In the standby region
 <b>SAVE:</b> log_rr_before_promotion.txt
 
 #### RR before promotion
-![rr before promotion](screenshots/rr_before_promotion.png "rr before promotion")
+![rr before promotion](screenshots/grade/rr_before_promotion.png "rr before promotion")
 
 #### Promote read replica in order to make insertion
 ![Read Replica](screenshots/REPLICA_promote.png "Read Replica")
 
 #### RR after promotion
-![rr after promotion](screenshots/rr_after_promotion.png "rr after promotion")
+![rr after promotion](screenshots/grade/rr_after_promotion.png "rr after promotion")
 
 
 ### Website Resiliency
@@ -264,23 +264,23 @@ configure it as a static website.
 ![S3 bucket creation](screenshots/S3_bucket_creation_01.png "S3 bucket creation")
 
 #### S3 Original
-![S3 Original](screenshots/s3_original.png "S3 Original")
+![S3 Original](screenshots/grade/s3_original.png "S3 Original")
 
 #### S3 Season
-![S3 Season](screenshots/s3_season.png "S3 Season")
+![S3 Season](screenshots/grade/s3_season.png "S3 Season")
 
 #### S3 Season Revert
-![S3 Season Revert](screenshots/s3_season_revert.png "S3 Season Revert")
+![S3 Season Revert](screenshots/grade/s3_season_revert.png "S3 Season Revert")
 
 #### S3 Deletion
-![S3 Deletion](screenshots/s3_deletion.png "S3 Deletion")
+![S3 Deletion](screenshots/grade/s3_deletion.png "S3 Deletion")
 
 #### S3 Delete Marker
-![S3 Deletion Marker](screenshots/s3_delete_marker.png "S3 Delete Marker")
+![S3 Deletion Marker](screenshots/grade/s3_delete_marker.png "S3 Delete Marker")
 
 
 #### S3 Delete Revert
-![S3 Deletion Revert](screenshots/s3_delete_revert.png "S3 Delete Revert")
+![S3 Deletion Revert](screenshots/grade/s3_delete_revert.png "S3 Delete Revert")
 
 
 
